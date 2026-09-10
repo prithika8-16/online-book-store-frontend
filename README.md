@@ -1,16 +1,162 @@
-# React + Vite
+# Online Book Store – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and user-friendly **Online Book Store** frontend built with React and Vite. The application provides book browsing, authentication, cart management, checkout, order tracking, and an admin dashboard.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* User registration and login
+* JWT-based authentication
+* Browse and search books
+* View book details
+* Add books to cart
+* Update and remove cart items
+* Checkout and place orders
+* View order confirmation
+* View previous orders
+* Admin dashboard
+* Add, update, and manage books
+* Responsive and modern user interface
+* REST API integration using Axios
+* Protected user and admin routes
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* JavaScript
+* HTML5
+* CSS3
+* Tailwind CSS
+* Axios
+* React Router
+* Lucide React
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── components/
+│   ├── AdminRoute.jsx
+│   ├── Navbar.jsx
+│   └── ProtectedRoute.jsx
+│
+├── pages/
+│   ├── AdminBooks.jsx
+│   ├── AdminDashboard.jsx
+│   ├── Books.jsx
+│   ├── Cart.jsx
+│   ├── Checkout.jsx
+│   ├── Home.jsx
+│   ├── Login.jsx
+│   ├── MyOrders.jsx
+│   ├── OrderConfirmation.jsx
+│   └── Register.jsx
+│
+├── services/
+│   └── api.js
+│
+├── assets/
+│
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+```
+
+## ⚙️ Backend Integration
+
+This frontend communicates with the Spring Boot backend through REST APIs.
+
+The backend runs locally on:
+
+```text
+http://localhost:8081
+```
+
+The frontend runs locally on:
+
+```text
+http://localhost:5173
+```
+
+Backend repository:
+
+**Online Book Store Backend**
+
+https://github.com/prithika8-16/online-book-store-backend
+
+## ▶️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/prithika8-16/online-book-store-frontend.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd online-book-store-frontend
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the application in your browser:
+
+```text
+http://localhost:5173
+```
+
+## 🔐 Authentication
+
+The application uses JWT authentication provided by the Spring Boot backend.
+
+Different access levels are supported:
+
+* **USER** – Browse books, manage cart, place orders, and view orders.
+* **ADMIN** – Manage books and access the admin dashboard.
+
+## 🛒 Application Flow
+
+```text
+Register
+   ↓
+Login
+   ↓
+Browse Books
+   ↓
+Add to Cart
+   ↓
+Checkout
+   ↓
+Place Order
+   ↓
+Order Confirmation
+   ↓
+My Orders
+```
+
+## 📌 Related Project
+
+This frontend is part of a full-stack Online Book Store application.
+
+**Backend:** Java + Spring Boot + MySQL + JWT
+**Frontend:** React + Vite + Tailwind CSS
+
+## 👩‍💻 Author
+
+**S Prithika**
+
+B.Tech – Electronics and Communication Engineering
+
+GitHub: https://github.com/prithika8-16
